@@ -1,0 +1,32 @@
+{
+  "name": "apartment_server",
+  "version": "1.0.0",
+  "description": "Server for managing apartment duties/tenants",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon ./src/server.js",
+    "migrator": "npx node ./src/db-migrations/sql-migrator.js"
+  },
+  "author": "Klevin Bazaiti",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bluebird": "^3.7.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.1",
+    "node-postgresql-migrator": "git+https://gitlab.com/oliasoft-open-source/node-postgresql-migrator.git#1",
+    "pg-promise": "^11.5.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}
